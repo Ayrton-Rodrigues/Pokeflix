@@ -1,0 +1,183 @@
+/* Elementos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorred: #e50914;
+  --colorblack: #141414;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000f5;
+  color: var(--colorred);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+
+.logo {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--colorred);
+  letter-spacing: 1px;
+ 
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container-navbar {
+  margin: auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar a {
+  padding: 16px;
+  color: #ffffffa1;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+.navbar a:hover {
+  color: var(--colorred);
+}
+
+/* Filme Principal */
+
+.filme-principal {
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/img/mewtwofundo.jpg") no-repeat;
+height: 700px;
+  background-size: cover;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sinopse {
+  margin-bottom: 60px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  max-width: 60ch;  
+  
+}
+
+
+.filme-principal .titulo {
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: wheat;
+  padding: 15px 30px;
+  margin-right: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.botao:hover { 
+    background-color: white;
+    color: var(--colorblack);
+}
+i { 
+    margin-right: 10px;
+}
+
+.container-filme { 
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+.box-image { 
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) { 
+   .container-filme .titulo { 
+        font-size: 3rem; 
+    }
+    .sinopse {        
+        max-width: 40ch;
+    }
+}
+@media (max-width: 800px) { 
+
+    .sinopse {        
+        font-size: 1rem;
+    }
+    .container-filme .titulo { 
+        font-size: 2.5rem; 
+    }
+ 
+    .container-filme .botao { 
+        margin-top: 20px;
+        font-size: 0.675rem;
+    }
+
+.container-navbar { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 500px) {
+
+    .container-navbar .navbar { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+.filme-principal { 
+    background-position: center;
+}
+.sinopse {        
+    font-size: 0.875rem;
+}
+.container-filme .titulo { 
+    font-size: 2rem; 
+}
+
+.container-filme .botao { 
+    margin-top: 20px;
+    font-size: 0.575rem;
+    padding: 10px 20px;
+}
+}
